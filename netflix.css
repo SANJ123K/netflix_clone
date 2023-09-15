@@ -1,0 +1,136 @@
+/* -----------------Normalise css-----------------*/
+html,body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+
+}
+
+/* -----------------Header Css----------------- */
+header{
+    /* background-color: grey; */
+}
+
+.header-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.left-cont, .right-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-brand{
+    max-width: 110px;
+}
+
+
+
+.main-nav{
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    margin-right: 20px;
+    color: #e5e5e5;
+    opacity: 83;
+}
+
+.nav-item.active{
+    color: white;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.right-cont svg, .right-cont img{
+    margin-right: 22px;
+    cursor: pointer;
+
+}
+
+.right-cont svg{
+    color: white;
+}
+
+.right-cont img{
+    max-width: 40px;
+}
+
+/* -----------------Movies Section CSS-----------------*/
+.movies-section{
+
+}
+
+
+
+.movie-section-heading{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.explore-nudge{
+    color: #53b9c5;
+    font-size: 12px;
+    display: none;
+    
+}
+
+.movie-section-heading:hover .explore-nudge{
+    display: flex;
+}
+
+.movies-row{
+    height:300px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.movies-row::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+
+}
+
+.movie-item{
+    width: 245px;
+    object-fit: contain;
+    margin-right: 6px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.movie-item:hover{
+    transform: scale(1.3);
+    transition: transform ease 300ms;
+}
+
+/*  -----------------RESPONSIVE CSS----------------- */
+@media (max-width:767px) {
+    .main-nav{
+        display: none;
+    }
+}
